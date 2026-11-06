@@ -13,6 +13,7 @@ Private notes (artifact links, personal working rules) are in `CLAUDE.local.md`,
 - `tools/bundle.py`: inlines fonts, data and JS into one page for claude.ai artifacts (no doctype/head/body).
   - `python3 tools/bundle.py` → `dist/aedna-field-guide.html`
   - `python3 tools/bundle.py --scope holi` → `dist/holi-field-guide.html` (chapters holi, unicorn, shared; no Notion link)
+  - `python3 tools/bundle.py --scope holi --pages` → `holi.html` in the repo root (the GitHub Pages copy of the Holi guide). Rebuild it after editing `index.html`.
   - Add `--private` to read `private.json` (git-ignored, `{"source": "<Notion URL>"}`) and write to `dist/private/` (git-ignored). Publish artifacts from these builds.
 - `DESIGN.md`, `.impeccable/design.json`, `PRODUCT.md`: the design system and product record for the impeccable skill.
 - `fonts/`: self-hosted Archivo, Source Serif 4 and JetBrains Mono (OFL).
