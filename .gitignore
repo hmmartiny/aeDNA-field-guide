@@ -1,0 +1,19 @@
+.impeccable/review/
+.impeccable/hook.cache.json
+
+# macOS / OneDrive
+.DS_Store
+Icon?
+
+# Local Claude Code settings
+.claude/
+
+# Handoff files from the claude.ai session (2026-11-06)
+aedna-field-guide-repo.tar.gz
+session-transcript.jsonl
+
+# Private build inputs and outputs (Notion link, local notes)
+private.json
+dist/private/
+CLAUDE.local.md
+aedna-field-guide-history-*.bundle

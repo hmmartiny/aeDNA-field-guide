@@ -1,0 +1,61 @@
+#!/usr/bin/env python3
+"""Bundle index.html + data.js + app.js + fonts into one self-contained page for claude.ai artifacts.
+
+The artifact host wraps the file in its own <!doctype>/<head>/<body> skeleton and blocks
+same-origin stylesheets and fonts, so everything is inlined and the outer document tags are dropped.
+Usage: python3 tools/bundle.py            ->  dist/aedna-field-guide.html
+       python3 tools/bundle.py --scope holi  ->  dist/holi-field-guide.html
+       add --private to read private.json (git-ignored) and write to dist/private/ instead.
+       private.json: {"source": "<Notion dictionary URL>"} adds the "Open in Notion" link
+       (not in scopes with hideNotion).
+"""
+import base64, json, re, sys
+from pathlib import Path
+
+root = Path(__file__).resolve().parent.parent
+html = (root / "index.html").read_text(encoding="utf-8")
+
+SCOPES = {
+    "holi": {
+        "file": "holi-field-guide.html", "title": "Holi Field Guide",
+        "config": {
+            "chapters": ["holi", "unicorn", "shared"], "countLabel": "for Holi", "hideNotion": True,
+            "rename": {"shared": {"name": "Damage model (metaDMG)", "short": "Damage",
+                                  "desc": "Holi's damage columns come from metaDMG. pathopipe reports the same columns."}},
+        },
+    },
+}
+scope = None
+private = None
+if "--private" in sys.argv:
+    private = json.loads((root / "private.json").read_text(encoding="utf-8"))
+if "--scope" in sys.argv:
+    scope = SCOPES[sys.argv[sys.argv.index("--scope") + 1]]
+    html = html.replace("<title>aeDNA Field Guide</title>", f"<title>{scope['title']}</title>")
+    html = html.replace("<h1>aeDNA Field Guide</h1>", f"<h1>{scope['title']}</h1>")
+    html = html.replace('<script src="data.js"></script>', f"<script>window.AEDNA_SCOPE = {json.dumps(scope['config'])};</script>\n<script src=\"data.js\"></script>")
+
+def font_css():
+    css = (root / "fonts" / "fonts.css").read_text(encoding="utf-8")
+    def inline(m):
+        data = base64.b64encode((root / "fonts" / m.group(1)).read_bytes()).decode()
+        return f'url("data:font/woff2;base64,{data}")'
+    return re.sub(r'url\("([^"]+\.woff2)"\)', inline, css)
+
+head = re.search(r"<head>(.*?)</head>", html, re.S).group(1)
+body = re.search(r"<body>(.*?)</body>", html, re.S).group(1)
+title = re.search(r"<title>.*?</title>", head, re.S).group(0)
+meta = re.search(r'<meta name="claude:viewport-fit-sides"[^>]*>', head).group(0)
+style = re.search(r"<style>(.*?)</style>", head, re.S).group(1)
+
+for name in ("data.js", "app.js"):
+    src = (root / name).read_text(encoding="utf-8").replace("</script", "<\\/script")
+    if private and name == "data.js" and private.get("source") and not (scope and scope["config"].get("hideNotion")):
+        src = src.replace("source: null,", f"source: {json.dumps(private['source'])},", 1)
+    body = body.replace(f'<script src="{name}"></script>', f"<script>\n{src}\n</script>")
+
+out = f"{title}\n{meta}\n<style>\n{font_css()}\n{style}</style>\n{body.strip()}\n"
+dist = root / "dist" / ("private" if private else ""); dist.mkdir(parents=True, exist_ok=True)
+name = scope["file"] if scope else "aedna-field-guide.html"
+(dist / name).write_text(out, encoding="utf-8")
+print(f"wrote {dist.relative_to(root)}/{name} ({len(out.encode())/1024:.0f} KB)")

@@ -1,0 +1,1031 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-04T12:00:00+01:00",
+  "title": "Design System: aeDNA Field Guide",
+  "extensions": {
+    "colorMeta": {
+      "ground": {
+        "role": "neutral",
+        "displayName": "Ground",
+        "cssVar": "--ground",
+        "theme": "light",
+        "canonical": "oklch(96.4% 0.007 124)",
+        "tonalRamp": [
+          "#0b0b0a",
+          "#242523",
+          "#41433f",
+          "#60625e",
+          "#81837f",
+          "#a4a6a2",
+          "#c8cac6",
+          "#eeefec"
+        ]
+      },
+      "paper": {
+        "role": "neutral",
+        "displayName": "Paper",
+        "cssVar": "--paper",
+        "theme": "light",
+        "canonical": "oklch(99.3% 0.003 128)",
+        "tonalRamp": [
+          "#0b0b0b",
+          "#252524",
+          "#414241",
+          "#616160",
+          "#828381",
+          "#a4a5a4",
+          "#c9c9c8",
+          "#eeefed"
+        ]
+      },
+      "ink": {
+        "role": "primary",
+        "displayName": "Field Ink",
+        "cssVar": "--ink",
+        "theme": "light",
+        "canonical": "oklch(23.4% 0.015 158)",
+        "tonalRamp": [
+          "#080c0a",
+          "#212723",
+          "#3d443f",
+          "#5b645e",
+          "#7b857f",
+          "#9fa8a2",
+          "#c4cbc6",
+          "#eaf0ec"
+        ]
+      },
+      "muted": {
+        "role": "neutral",
+        "displayName": "Muted",
+        "cssVar": "--muted",
+        "theme": "light",
+        "canonical": "oklch(45.0% 0.015 157)",
+        "tonalRamp": [
+          "#090c0a",
+          "#212723",
+          "#3d443f",
+          "#5b645e",
+          "#7b857f",
+          "#9fa8a2",
+          "#c4cbc6",
+          "#eaf0ec"
+        ]
+      },
+      "rule": {
+        "role": "neutral",
+        "displayName": "Rule",
+        "cssVar": "--rule",
+        "theme": "light",
+        "canonical": "oklch(87.6% 0.012 133)",
+        "tonalRamp": [
+          "#0a0c09",
+          "#232622",
+          "#40433e",
+          "#5e635c",
+          "#7f847d",
+          "#a2a6a0",
+          "#c7cac5",
+          "#edefeb"
+        ]
+      },
+      "rule-strong": {
+        "role": "neutral",
+        "displayName": "Rule Strong",
+        "cssVar": "--rule-strong",
+        "theme": "light",
+        "canonical": "oklch(70.2% 0.016 152)",
+        "tonalRamp": [
+          "#090c09",
+          "#212722",
+          "#3d443e",
+          "#5b645d",
+          "#7c857e",
+          "#9fa8a1",
+          "#c4cbc5",
+          "#eaf0ec"
+        ]
+      },
+      "read": {
+        "role": "secondary",
+        "displayName": "Read Slate",
+        "cssVar": "--read",
+        "theme": "light",
+        "canonical": "oklch(70.8% 0.041 239)",
+        "tonalRamp": [
+          "#030c13",
+          "#182732",
+          "#304553",
+          "#4c6576",
+          "#6c8699",
+          "#91a9b9",
+          "#b9ccda",
+          "#e2f1fc"
+        ]
+      },
+      "read-ink": {
+        "role": "secondary",
+        "displayName": "Read Ink",
+        "cssVar": "--read-ink",
+        "theme": "light",
+        "canonical": "oklch(42.7% 0.056 241)",
+        "tonalRamp": [
+          "#010d17",
+          "#122736",
+          "#294559",
+          "#43667e",
+          "#6487a1",
+          "#8aaac1",
+          "#b3cde1",
+          "#ddf2ff"
+        ]
+      },
+      "damage": {
+        "role": "primary",
+        "displayName": "Damage Vermilion",
+        "cssVar": "--damage",
+        "theme": "light",
+        "canonical": "oklch(55.5% 0.171 36)",
+        "tonalRamp": [
+          "#260000",
+          "#500000",
+          "#7d1000",
+          "#ac2c00",
+          "#d4532e",
+          "#f28061",
+          "#ffad92",
+          "#ffd9c3"
+        ]
+      },
+      "pass": {
+        "role": "secondary",
+        "displayName": "Verdict Green",
+        "cssVar": "--pass",
+        "theme": "light",
+        "canonical": "oklch(46.2% 0.079 160)",
+        "tonalRamp": [
+          "#001005",
+          "#042d1b",
+          "#1b4d35",
+          "#336f51",
+          "#569172",
+          "#80b396",
+          "#abd5bd",
+          "#d7f8e5"
+        ]
+      },
+      "fail": {
+        "role": "secondary",
+        "displayName": "Verdict Red",
+        "cssVar": "--fail",
+        "theme": "light",
+        "canonical": "oklch(49.0% 0.146 27)",
+        "tonalRamp": [
+          "#230000",
+          "#4b0405",
+          "#771c19",
+          "#a43630",
+          "#cb5a50",
+          "#e9847a",
+          "#ffafa5",
+          "#ffdbd2"
+        ]
+      },
+      "hl": {
+        "role": "tertiary",
+        "displayName": "Mark Yellow",
+        "cssVar": "--hl",
+        "theme": "light",
+        "canonical": "oklch(86.9% 0.142 96)",
+        "tonalRamp": [
+          "#150800",
+          "#342200",
+          "#563f00",
+          "#7a5e00",
+          "#9c8000",
+          "#bca43f",
+          "#dcc97c",
+          "#feefb4"
+        ]
+      },
+      "hl-soft": {
+        "role": "tertiary",
+        "displayName": "Lit Wash",
+        "cssVar": "--hl-soft",
+        "theme": "light",
+        "canonical": "oklch(93.0% 0.084 97)",
+        "tonalRamp": [
+          "#110b00",
+          "#2d2500",
+          "#4d420a",
+          "#6e6122",
+          "#908345",
+          "#b1a671",
+          "#d3ca9e",
+          "#f6efcd"
+        ]
+      },
+      "ch-shared": {
+        "role": "tertiary",
+        "displayName": "Shared Slate",
+        "cssVar": "--ch-shared",
+        "theme": "light",
+        "canonical": "oklch(33.1% 0.015 161)",
+        "tonalRamp": [
+          "#080c0a",
+          "#212723",
+          "#3c4440",
+          "#5a645e",
+          "#7b857f",
+          "#9ea8a2",
+          "#c4cbc7",
+          "#eaf0ed"
+        ]
+      },
+      "ch-holi": {
+        "role": "tertiary",
+        "displayName": "Holi Green",
+        "cssVar": "--ch-holi",
+        "theme": "light",
+        "canonical": "oklch(46.2% 0.079 160)",
+        "tonalRamp": [
+          "#001005",
+          "#042d1b",
+          "#1b4d35",
+          "#336f51",
+          "#569172",
+          "#80b396",
+          "#abd5bd",
+          "#d7f8e5"
+        ]
+      },
+      "ch-patho": {
+        "role": "tertiary",
+        "displayName": "pathopipe Plum",
+        "cssVar": "--ch-patho",
+        "theme": "light",
+        "canonical": "oklch(43.6% 0.117 316)",
+        "tonalRamp": [
+          "#15021c",
+          "#34163f",
+          "#562f65",
+          "#7b4a8d",
+          "#9d6bb1",
+          "#be92d0",
+          "#deb9ed",
+          "#ffe2ff"
+        ]
+      },
+      "ochre": {
+        "role": "tertiary",
+        "displayName": "Ochre",
+        "cssVar": "--ochre",
+        "theme": "light",
+        "canonical": "oklch(50.2% 0.101 75)",
+        "tonalRamp": [
+          "#180600",
+          "#381e00",
+          "#5c3a00",
+          "#825707",
+          "#a67935",
+          "#c59d65",
+          "#e5c396",
+          "#ffeac6"
+        ]
+      },
+      "ch-phynder": {
+        "role": "tertiary",
+        "displayName": "pathphynder Blue",
+        "cssVar": "--ch-phynder",
+        "theme": "light",
+        "canonical": "oklch(45.3% 0.090 250)",
+        "tonalRamp": [
+          "#000b1e",
+          "#072642",
+          "#1d4469",
+          "#356492",
+          "#5686b6",
+          "#7fa9d4",
+          "#aacdf1",
+          "#d6f2ff"
+        ]
+      },
+      "ch-soibean": {
+        "role": "tertiary",
+        "displayName": "soibean Brick",
+        "cssVar": "--ch-soibean",
+        "theme": "light",
+        "canonical": "oklch(46.4% 0.135 26)",
+        "tonalRamp": [
+          "#220000",
+          "#49080a",
+          "#73211f",
+          "#a03b37",
+          "#c65e57",
+          "#e5877f",
+          "#ffb1aa",
+          "#ffdcd6"
+        ]
+      },
+      "ch-quick": {
+        "role": "tertiary",
+        "displayName": "quicksand + kallisto Teal",
+        "cssVar": "--ch-quick",
+        "theme": "light",
+        "canonical": "oklch(47.1% 0.071 208)",
+        "tonalRamp": [
+          "#001016",
+          "#002d37",
+          "#004c56",
+          "#256c76",
+          "#4a8e99",
+          "#6db2bc",
+          "#a3d3db",
+          "#dcf4f7"
+        ]
+      },
+      "on-ch": {
+        "role": "neutral",
+        "displayName": "On Chapter",
+        "cssVar": "--on-ch",
+        "theme": "light",
+        "canonical": "oklch(99.3% 0.003 128)",
+        "tonalRamp": [
+          "#0b0b0b",
+          "#252524",
+          "#414241",
+          "#616160",
+          "#828381",
+          "#a4a5a4",
+          "#c9c9c8",
+          "#eeefed"
+        ]
+      },
+      "ground-dark": {
+        "role": "neutral",
+        "displayName": "Ground (dark)",
+        "cssVar": "--ground",
+        "theme": "dark",
+        "canonical": "oklch(19.0% 0.009 153)",
+        "tonalRamp": [
+          "#0a0c0a",
+          "#232624",
+          "#3f4340",
+          "#5e635f",
+          "#7f8480",
+          "#a2a6a3",
+          "#c6cac7",
+          "#ecefed"
+        ]
+      },
+      "paper-dark": {
+        "role": "neutral",
+        "displayName": "Paper (dark)",
+        "cssVar": "--paper",
+        "theme": "dark",
+        "canonical": "oklch(22.4% 0.009 159)",
+        "tonalRamp": [
+          "#090c0a",
+          "#222624",
+          "#3e4340",
+          "#5d635f",
+          "#7e8480",
+          "#a1a7a3",
+          "#c6cac7",
+          "#ecefed"
+        ]
+      },
+      "ink-dark": {
+        "role": "primary",
+        "displayName": "Field Ink (dark)",
+        "cssVar": "--ink",
+        "theme": "dark",
+        "canonical": "oklch(92.5% 0.010 141)",
+        "tonalRamp": [
+          "#0a0c0a",
+          "#232623",
+          "#40433f",
+          "#5e635d",
+          "#7f847e",
+          "#a2a6a1",
+          "#c7cac6",
+          "#edefec"
+        ]
+      },
+      "muted-dark": {
+        "role": "neutral",
+        "displayName": "Muted (dark)",
+        "cssVar": "--muted",
+        "theme": "dark",
+        "canonical": "oklch(74.1% 0.016 152)",
+        "tonalRamp": [
+          "#090c09",
+          "#212722",
+          "#3d443e",
+          "#5b645d",
+          "#7c857e",
+          "#9fa8a1",
+          "#c4cbc5",
+          "#eaf0ec"
+        ]
+      },
+      "rule-dark": {
+        "role": "neutral",
+        "displayName": "Rule (dark)",
+        "cssVar": "--rule",
+        "theme": "dark",
+        "canonical": "oklch(32.0% 0.014 158)",
+        "tonalRamp": [
+          "#090c0a",
+          "#212723",
+          "#3d4440",
+          "#5b645e",
+          "#7c857f",
+          "#9fa7a2",
+          "#c4cbc7",
+          "#eaf0ec"
+        ]
+      },
+      "rule-strong-dark": {
+        "role": "neutral",
+        "displayName": "Rule Strong (dark)",
+        "cssVar": "--rule-strong",
+        "theme": "dark",
+        "canonical": "oklch(48.1% 0.018 158)",
+        "tonalRamp": [
+          "#080c0a",
+          "#202723",
+          "#3c453f",
+          "#59645d",
+          "#7a867e",
+          "#9ea8a1",
+          "#c3ccc6",
+          "#eaf0ec"
+        ]
+      },
+      "read-dark": {
+        "role": "secondary",
+        "displayName": "Read Slate (dark)",
+        "cssVar": "--read",
+        "theme": "dark",
+        "canonical": "oklch(58.1% 0.051 240)",
+        "tonalRamp": [
+          "#020c15",
+          "#142735",
+          "#2c4557",
+          "#46657b",
+          "#67879e",
+          "#8da9be",
+          "#b5cdde",
+          "#dff2ff"
+        ]
+      },
+      "read-ink-dark": {
+        "role": "secondary",
+        "displayName": "Read Ink (dark)",
+        "cssVar": "--read-ink",
+        "theme": "dark",
+        "canonical": "oklch(80.0% 0.042 239)",
+        "tonalRamp": [
+          "#030c14",
+          "#172732",
+          "#304553",
+          "#4b6577",
+          "#6c8699",
+          "#91a9b9",
+          "#b9ccda",
+          "#e1f1fc"
+        ]
+      },
+      "damage-dark": {
+        "role": "primary",
+        "displayName": "Damage Vermilion (dark)",
+        "cssVar": "--damage",
+        "theme": "dark",
+        "canonical": "oklch(68.7% 0.172 38)",
+        "tonalRamp": [
+          "#260000",
+          "#500000",
+          "#7d1100",
+          "#ac2d00",
+          "#d45328",
+          "#f2815d",
+          "#ffad8f",
+          "#ffdac2"
+        ]
+      },
+      "pass-dark": {
+        "role": "secondary",
+        "displayName": "Verdict Green (dark)",
+        "cssVar": "--pass",
+        "theme": "dark",
+        "canonical": "oklch(74.1% 0.102 160)",
+        "tonalRamp": [
+          "#001104",
+          "#002f19",
+          "#005031",
+          "#18734d",
+          "#42956d",
+          "#72b692",
+          "#a1d8b9",
+          "#d0fbe2"
+        ]
+      },
+      "fail-dark": {
+        "role": "secondary",
+        "displayName": "Verdict Red (dark)",
+        "cssVar": "--fail",
+        "theme": "dark",
+        "canonical": "oklch(73.6% 0.133 26)",
+        "tonalRamp": [
+          "#220000",
+          "#49090a",
+          "#73221f",
+          "#9f3c37",
+          "#c65e57",
+          "#e4887f",
+          "#ffb2aa",
+          "#ffddd6"
+        ]
+      },
+      "hl-dark": {
+        "role": "tertiary",
+        "displayName": "Mark Yellow (dark)",
+        "cssVar": "--hl",
+        "theme": "dark",
+        "canonical": "oklch(69.0% 0.126 92)",
+        "tonalRamp": [
+          "#160800",
+          "#352100",
+          "#573e00",
+          "#7b5d00",
+          "#9e7f00",
+          "#bea34e",
+          "#dec886",
+          "#ffeebb"
+        ]
+      },
+      "hl-soft-dark": {
+        "role": "tertiary",
+        "displayName": "Lit Wash (dark)",
+        "cssVar": "--hl-soft",
+        "theme": "dark",
+        "canonical": "oklch(33.9% 0.039 98)",
+        "tonalRamp": [
+          "#0d0b03",
+          "#282516",
+          "#47422e",
+          "#676248",
+          "#888368",
+          "#aaa68e",
+          "#cecab6",
+          "#f2efdf"
+        ]
+      },
+      "ch-shared-dark": {
+        "role": "tertiary",
+        "displayName": "Shared Slate (dark)",
+        "cssVar": "--ch-shared",
+        "theme": "dark",
+        "canonical": "oklch(42.3% 0.018 158)",
+        "tonalRamp": [
+          "#080c0a",
+          "#202723",
+          "#3b453f",
+          "#59645d",
+          "#7a867e",
+          "#9da8a1",
+          "#c3ccc6",
+          "#e9f1ec"
+        ]
+      },
+      "ch-holi-dark": {
+        "role": "tertiary",
+        "displayName": "Holi Green (dark)",
+        "cssVar": "--ch-holi",
+        "theme": "dark",
+        "canonical": "oklch(46.2% 0.079 160)",
+        "tonalRamp": [
+          "#001005",
+          "#042d1b",
+          "#1b4d35",
+          "#336f51",
+          "#569172",
+          "#80b396",
+          "#abd5bd",
+          "#d7f8e5"
+        ],
+        "note": "Same value as light since the 4.5:1 on-ch contrast fix."
+      },
+      "ch-patho-dark": {
+        "role": "tertiary",
+        "displayName": "pathopipe Plum (dark)",
+        "cssVar": "--ch-patho",
+        "theme": "dark",
+        "canonical": "oklch(49.4% 0.118 316)",
+        "tonalRamp": [
+          "#15021d",
+          "#34153f",
+          "#562e66",
+          "#7b4a8e",
+          "#9e6bb2",
+          "#be91d0",
+          "#deb9ee",
+          "#ffe2ff"
+        ]
+      },
+      "ochre-dark": {
+        "role": "tertiary",
+        "displayName": "Ochre (dark)",
+        "cssVar": "--ochre",
+        "theme": "dark",
+        "canonical": "oklch(50.2% 0.101 75)",
+        "tonalRamp": [
+          "#180600",
+          "#381e00",
+          "#5c3a00",
+          "#825707",
+          "#a67935",
+          "#c59d65",
+          "#e5c396",
+          "#ffeac6"
+        ],
+        "note": "Same value as light since the 4.5:1 on-ch contrast fix."
+      },
+      "ch-phynder-dark": {
+        "role": "tertiary",
+        "displayName": "pathphynder Blue (dark)",
+        "cssVar": "--ch-phynder",
+        "theme": "dark",
+        "canonical": "oklch(50.2% 0.099 250)",
+        "tonalRamp": [
+          "#000b20",
+          "#042645",
+          "#18446d",
+          "#306497",
+          "#5286bb",
+          "#7ca9d9",
+          "#a7cdf5",
+          "#d4f2ff"
+        ]
+      },
+      "ch-soibean-dark": {
+        "role": "tertiary",
+        "displayName": "soibean Brick (dark)",
+        "cssVar": "--ch-soibean",
+        "theme": "dark",
+        "canonical": "oklch(50.3% 0.142 26)",
+        "tonalRamp": [
+          "#230000",
+          "#4a0508",
+          "#761e1d",
+          "#a23834",
+          "#c95b54",
+          "#e8857d",
+          "#ffb0a8",
+          "#ffdbd4"
+        ]
+      },
+      "ch-quick-dark": {
+        "role": "tertiary",
+        "displayName": "quicksand + kallisto Teal (dark)",
+        "cssVar": "--ch-quick",
+        "theme": "dark",
+        "canonical": "oklch(47.1% 0.071 208)",
+        "tonalRamp": [
+          "#001016",
+          "#002d37",
+          "#004c56",
+          "#256c76",
+          "#4a8e99",
+          "#6db2bc",
+          "#a3d3db",
+          "#dcf4f7"
+        ],
+        "note": "Same value as light; darkest that keeps the family hue while on-ch clears 4.5:1."
+      },
+      "on-ch-dark": {
+        "role": "neutral",
+        "displayName": "On Chapter (dark)",
+        "cssVar": "--on-ch",
+        "theme": "dark",
+        "canonical": "oklch(98.0% 0.004 135)",
+        "tonalRamp": [
+          "#0b0b0a",
+          "#242524",
+          "#414240",
+          "#60625f",
+          "#818380",
+          "#a4a5a3",
+          "#c8c9c7",
+          "#eeefed"
+        ]
+      },
+      "ch-unicorn": {
+        "role": "tertiary",
+        "displayName": "Unicorn Olive",
+        "cssVar": "--ch-unicorn",
+        "theme": "light",
+        "canonical": "oklch(47.1% 0.071 208)",
+        "tonalRamp": [
+          "#001016",
+          "#002d37",
+          "#004c56",
+          "#256c76",
+          "#4a8e99",
+          "#6db2bc",
+          "#a3d3db",
+          "#dcf4f7"
+        ]
+      },
+      "ch-unicorn-dark": {
+        "role": "tertiary",
+        "displayName": "Unicorn Olive (dark)",
+        "cssVar": "--ch-unicorn",
+        "theme": "dark",
+        "canonical": "oklch(47.1% 0.071 208)",
+        "tonalRamp": [
+          "#001016",
+          "#002d37",
+          "#004c56",
+          "#256c76",
+          "#4a8e99",
+          "#6db2bc",
+          "#a3d3db",
+          "#dcf4f7"
+        ],
+        "note": "Same value as light; darkest that keeps the family hue while on-ch clears 4.5:1."
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Chapter titles on the chapter band and checklist head."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Account names; 28px under 760px."
+      },
+      "masthead": {
+        "displayName": "Masthead",
+        "purpose": "Guide title only."
+      },
+      "title": {
+        "displayName": "Tab",
+        "purpose": "Thumb tabs; counts in mono 500 12px, no opacity."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Definitions and chapter descriptions, 62-66ch."
+      },
+      "body-lead": {
+        "displayName": "Identification",
+        "purpose": "One-line identification under an account name, max 64ch."
+      },
+      "caption": {
+        "displayName": "Caption",
+        "purpose": "Plate captions after the Plate n label."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Uppercase entry kind and fact terms; checklist column heads."
+      },
+      "ui": {
+        "displayName": "UI",
+        "purpose": "Control labels, buttons, filter pills."
+      },
+      "symbol": {
+        "displayName": "Symbol",
+        "purpose": "Parameter symbols as the tool spells them."
+      },
+      "value": {
+        "displayName": "Value",
+        "purpose": "Readouts, slider outputs, defaults and thresholds; tabular figures."
+      },
+      "plate-text": {
+        "displayName": "Plate text",
+        "purpose": "All text inside plate SVGs."
+      },
+      "plate-glyph": {
+        "displayName": "Plate glyph",
+        "purpose": "The single categorical answer inside a plate (Ancientness flag, consensus base); one per plate."
+      }
+    },
+    "fontStretch": {
+      "display": "72%",
+      "headline": "82%",
+      "masthead": "78%",
+      "title": "85%",
+      "plate-glyph": "85%"
+    },
+    "shadows": [
+      {
+        "name": "popover",
+        "value": "0 12px 32px -12px rgb(0 0 0 / 0.28)",
+        "purpose": "Search results list, the only floating surface."
+      },
+      {
+        "name": "focus-halo",
+        "value": "0 0 0 3px color-mix(in srgb, var(--hl) 55%, transparent)",
+        "purpose": "Search field focus, with border to ink."
+      }
+    ],
+    "motion": [
+      {
+        "name": "mark-pulse",
+        "value": "single 280ms ease-out, cubic-bezier(.16,1,.3,1), scale 1 to 2.4, opacity 1 to 0",
+        "purpose": "Field-mark ring on search hit, deep link, mark click, or list hover; reduced motion leaves the ring lit without animating."
+      },
+      {
+        "name": "list-wash",
+        "value": "background-color 280ms cubic-bezier(.2,.7,.2,1)",
+        "purpose": "Field-mark list entry lit state."
+      },
+      {
+        "name": "tab-lift",
+        "value": "transform 160ms cubic-bezier(.2,.7,.2,1), translateY(3px) to 0",
+        "purpose": "Thumb tab hover and current."
+      },
+      {
+        "name": "found-flash",
+        "value": "hl-soft for 2600ms",
+        "purpose": "Entry or checklist row reached by search or deep link."
+      },
+      {
+        "name": "plate-redraw",
+        "value": "none",
+        "purpose": "Plates redraw instantly on control input."
+      },
+      {
+        "name": "verdict-announce",
+        "value": "700ms debounce",
+        "purpose": "Polite live region repeats the plate verdict once the controls settle."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "stack",
+        "value": "1080px"
+      },
+      {
+        "name": "narrow",
+        "value": "760px"
+      }
+    ],
+    "themes": {
+      "dark": "prefers-color-scheme: dark unless :root[data-theme=light]; forced by :root[data-theme=dark]; values are the -dark color keys mapped onto the same custom properties."
+    },
+    "accessibility": {
+      "skipLink": "First focus stop; ink tab, ground text, Archivo 650 14px, 4px radius, hidden above the viewport until focused.",
+      "plateGroup": "Plate SVG is role=group labelled 'Plate n: <alt>'; one tab stop per plate via roving tabindex; ArrowLeft/Right/Up/Down and Home/End move between marks; Enter/Space opens the entry.",
+      "markHitArea": "Transparent 28px circle (r 14) under each 21px field-mark dot.",
+      "liveRegion": "Visually hidden aria-live=polite paragraph per plate carrying the verdict.",
+      "edgeFades": "Narrow screens: .svgwrap fades the edge that still has content (8% at that side); #000 in the gradient is mask alpha, not paint.",
+      "chapterContrast": "Every chapter family fill carries on-ch at 4.5:1 or better in both themes (lowest: Ochre 5.94 light, 5.72 dark)."
+    },
+    "radiusNotes": {
+      "focus": "2px on the global :focus-visible outline only.",
+      "inset": "5px on rows nested inside the 8px search popover (6px padding)."
+    }
+  },
+  "components": [
+    {
+      "name": "Thumb Tabs",
+      "kind": "nav",
+      "refersTo": "thumb-tab",
+      "description": "Flat family-coloured chapter tabs along the masthead rule; rest 3px low, lift on hover or current.",
+      "html": "<nav class=\"ds-tabs\"><a class=\"ds-tab\" href=\"#\" aria-current=\"true\" style=\"--tab:#2f3833\">Shared <span class=\"ds-n\">11</span></a><a class=\"ds-tab\" href=\"#\" style=\"--tab:#2a6649\">Holi <span class=\"ds-n\">14</span></a><a class=\"ds-tab\" href=\"#\" style=\"--tab:#6a3a7c\">pathopipe <span class=\"ds-n\">16</span></a><a class=\"ds-tab\" href=\"#\" style=\"--tab:#5a5f14\">Unicorn <span class=\"ds-n\">25</span></a><a class=\"ds-tab\" href=\"#\" style=\"--tab:#1d6670\">quicksand <span class=\"ds-n\">25</span></a><a class=\"ds-tab ds-check\" href=\"#\">Checklist <span class=\"ds-n\">66</span></a></nav>",
+      "css": ":host,.ds-root{--ground:#f2f4ef;--paper:#fcfdfb;--ink:#18201b;--muted:#4f5852;--rule:#d3d8d0;--rule-strong:#98a29a;--read:#8aa5b8;--damage:#c2421b;--hl:#f0d35a;--hl-soft:#f7e9a8;--on-ch:#fcfdfb;--f-display:'Archivo','Arial Narrow','Helvetica Neue',sans-serif;--f-body:'Source Serif 4','Iowan Old Style',Georgia,serif;--f-mono:'JetBrains Mono',ui-monospace,Menlo,monospace;}.ds-tabs{display:flex;gap:3px;border-bottom:1px solid var(--rule);background:var(--ground);padding:6px 6px 0}.ds-tab{display:flex;align-items:center;gap:8px;padding:8px 14px 7px;border-radius:6px 6px 0 0;background:var(--tab);color:var(--on-ch);font:650 14px/1.1 var(--f-display);font-stretch:85%;letter-spacing:.01em;text-decoration:none;transform:translateY(3px);transition:transform 160ms cubic-bezier(.2,.7,.2,1)}.ds-tab:hover,.ds-tab[aria-current=true]{transform:translateY(0)}.ds-tab:focus-visible{outline:2px solid var(--ink);outline-offset:2px}.ds-n{font:500 12px/1 var(--f-mono)}.ds-check{background:var(--paper);color:var(--ink);border:1px solid var(--rule-strong);border-bottom:0}"
+    },
+    {
+      "name": "Chapter Band",
+      "kind": "card",
+      "refersTo": "chapter-band",
+      "description": "Chapter opener in the family colour: condensed display title, description and meta in plain on-ch.",
+      "html": "<header class=\"ds-band\" style=\"--chc:#2a6649\"><div><h2>Holi</h2><p>Screen, map and authenticate reads against a reference database.</p></div><div class=\"ds-meta\">3 accounts \u00b7 14 entries<br><a href=\"#\">Holi page</a></div></header>",
+      "css": ":host,.ds-root{--ground:#f2f4ef;--paper:#fcfdfb;--ink:#18201b;--muted:#4f5852;--rule:#d3d8d0;--rule-strong:#98a29a;--read:#8aa5b8;--damage:#c2421b;--hl:#f0d35a;--hl-soft:#f7e9a8;--on-ch:#fcfdfb;--f-display:'Archivo','Arial Narrow','Helvetica Neue',sans-serif;--f-body:'Source Serif 4','Iowan Old Style',Georgia,serif;--f-mono:'JetBrains Mono',ui-monospace,Menlo,monospace;}.ds-band{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:end;gap:8px 32px;background:var(--chc);color:var(--on-ch);padding:28px 32px 24px;border-radius:4px 4px 0 0}.ds-band h2{margin:0;font:800 clamp(34px,4.4vw,52px)/.95 var(--f-display);font-stretch:72%;letter-spacing:-.015em}.ds-band p{margin:10px 0 0;max-width:62ch;font:400 17px/1.5 var(--f-body);color:var(--on-ch)}.ds-meta{font:500 14px/1.5 var(--f-display);text-align:right;color:var(--on-ch)}.ds-meta a{color:var(--on-ch);text-underline-offset:3px}"
+    },
+    {
+      "name": "Field-Mark Entry",
+      "kind": "custom",
+      "refersTo": "field-mark-dot",
+      "description": "Numbered list entry: ink dot, mono symbol, serif name, kind label, definition, threshold-first facts. Hover lights it.",
+      "html": "<ol class=\"ds-marks\"><li><span class=\"ds-num\">1</span><div><div class=\"ds-head\"><code class=\"ds-sym\">A</code><span>Damage amplitude</span><span class=\"ds-kind\">Output column</span></div><p class=\"ds-def\">Fitted C to T frequency at 5' position 1 after subtracting background.</p><dl class=\"ds-facts\"><div class=\"ds-thr\"><dt>Threshold</dt><dd>&gt;0.01 relaxed, &gt;0.02 strict</dd></div><div><dt>Default / range</dt><dd>0-1</dd></div></dl></div></li></ol>",
+      "css": ":host,.ds-root{--ground:#f2f4ef;--paper:#fcfdfb;--ink:#18201b;--muted:#4f5852;--rule:#d3d8d0;--rule-strong:#98a29a;--read:#8aa5b8;--damage:#c2421b;--hl:#f0d35a;--hl-soft:#f7e9a8;--on-ch:#fcfdfb;--f-display:'Archivo','Arial Narrow','Helvetica Neue',sans-serif;--f-body:'Source Serif 4','Iowan Old Style',Georgia,serif;--f-mono:'JetBrains Mono',ui-monospace,Menlo,monospace;}.ds-marks{list-style:none;margin:0;padding:0;font:400 17px/1.6 var(--f-body);color:var(--ink)}.ds-marks li{display:grid;grid-template-columns:30px minmax(0,1fr);gap:14px;padding:16px 10px 16px 8px;border-radius:4px;transition:background-color 280ms cubic-bezier(.2,.7,.2,1)}.ds-marks li:hover,.ds-marks li:focus-within{background:color-mix(in srgb,var(--hl-soft) 70%,transparent)}.ds-num{width:24px;height:24px;margin-top:2px;border-radius:50%;background:var(--ink);color:var(--ground);display:grid;place-items:center;font:700 12px/1 var(--f-display)}.ds-head{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 12px}.ds-sym{font:650 16px/1.3 var(--f-mono)}.ds-kind,.ds-facts dt{font:600 11.5px/1 var(--f-display);letter-spacing:.07em;text-transform:uppercase;color:var(--muted)}.ds-def{margin:6px 0 0;max-width:66ch}.ds-facts{display:flex;flex-wrap:wrap;gap:6px 22px;margin:10px 0 0}.ds-facts div{display:flex;gap:8px;align-items:baseline}.ds-facts dd{margin:0;font:400 14px var(--f-mono)}.ds-thr dt{color:var(--damage)}.ds-thr dd{font-weight:600}"
+    },
+    {
+      "name": "Plate Field Mark",
+      "kind": "custom",
+      "refersTo": "field-mark-dot",
+      "description": "Reads in slate, damage in vermilion, numbered ink marks on hairline leaders over 28px hit areas; one tab stop per plate, arrow keys move between marks; the yellow ring pulses once.",
+      "html": "<svg class=\"ds-fig\" viewBox=\"0 0 240 90\" role=\"group\" aria-label=\"Synthetic read with damaged end and field mark\"><g><rect class=\"ds-dmg\" x=\"10\" y=\"60\" width=\"12\" height=\"12\"/><rect class=\"ds-read\" x=\"24\" y=\"60\" width=\"12\" height=\"12\"/><rect class=\"ds-read\" x=\"38\" y=\"60\" width=\"12\" height=\"12\"/><rect class=\"ds-read\" x=\"52\" y=\"60\" width=\"12\" height=\"12\"/><rect class=\"ds-read\" x=\"66\" y=\"60\" width=\"12\" height=\"12\"/><rect class=\"ds-read\" x=\"80\" y=\"60\" width=\"12\" height=\"12\"/><rect class=\"ds-read\" x=\"94\" y=\"60\" width=\"12\" height=\"12\"/><rect class=\"ds-dmg\" x=\"108\" y=\"60\" width=\"12\" height=\"12\"/><line class=\"ds-thr\" x1=\"0\" y1=\"50\" x2=\"240\" y2=\"50\"/></g><g class=\"ds-mark\" tabindex=\"0\" role=\"button\" aria-label=\"Field mark 1: A\"><circle class=\"ds-hit\" cx=\"60\" cy=\"20\" r=\"14\"/><line x1=\"16\" y1=\"60\" x2=\"60\" y2=\"20\"/><circle class=\"ds-foot\" cx=\"16\" cy=\"60\" r=\"2.6\"/><circle class=\"ds-ring\" cx=\"60\" cy=\"20\" r=\"11\"/><circle class=\"ds-foot ds-dotc\" cx=\"60\" cy=\"20\" r=\"10.5\"/><text x=\"60\" y=\"20\">1</text></g></svg>",
+      "css": ":host,.ds-root{--ground:#f2f4ef;--paper:#fcfdfb;--ink:#18201b;--muted:#4f5852;--rule:#d3d8d0;--rule-strong:#98a29a;--read:#8aa5b8;--damage:#c2421b;--hl:#f0d35a;--hl-soft:#f7e9a8;--on-ch:#fcfdfb;--f-display:'Archivo','Arial Narrow','Helvetica Neue',sans-serif;--f-body:'Source Serif 4','Iowan Old Style',Georgia,serif;--f-mono:'JetBrains Mono',ui-monospace,Menlo,monospace;}.ds-fig{width:320px;background:var(--paper);border:1px solid var(--rule);border-radius:4px;padding:12px}.ds-read{fill:var(--read)}.ds-dmg{fill:var(--damage)}.ds-thr{stroke:var(--damage);stroke-width:1.5;stroke-dasharray:4 3}.ds-mark{cursor:pointer;outline:none}.ds-hit{fill:transparent}.ds-mark:focus-visible .ds-dotc{stroke:var(--hl);stroke-width:3}.ds-mark line{stroke:var(--ink);stroke-width:1}.ds-foot{fill:var(--ink)}.ds-mark text{fill:var(--ground);font:700 11px var(--f-display);text-anchor:middle;dominant-baseline:central}.ds-ring{fill:var(--hl);opacity:0;transform-box:fill-box;transform-origin:center}.ds-mark:hover .ds-ring,.ds-mark:focus-visible .ds-ring{opacity:1;animation:ds-pulse 280ms cubic-bezier(.16,1,.3,1) 1}@keyframes ds-pulse{from{opacity:1;transform:scale(1)}to{opacity:0;transform:scale(2.4)}}@media (prefers-reduced-motion:reduce){.ds-mark .ds-ring{animation:none!important}}"
+    },
+    {
+      "name": "Plate Controls and Readouts",
+      "kind": "custom",
+      "refersTo": "readout-dot",
+      "description": "Labelled slider with mono output, reset button, dashed-rule readouts with numbered dots and pass/fail values, verdict and Plate caption.",
+      "html": "<figure class=\"ds-plate\"><div class=\"ds-ctrl\"><label for=\"ds-a\"><code>A</code> amplitude</label><output>0.250</output><input id=\"ds-a\" type=\"range\" min=\"0\" max=\"0.4\" step=\"0.005\" value=\"0.25\"></div><button class=\"ds-reset\" type=\"button\">Reset to defaults</button><dl class=\"ds-ro\"><div><span class=\"ds-dot\">1</span><dt>amplitude A</dt><dd><span class=\"ds-pass\">0.250 passes</span></dd></div></dl><p class=\"ds-verdict\">At these settings the sample <b>passes the strict threshold</b>.</p><figcaption><b>Plate 1</b><span>Synthetic reads; damage drawn at the frequency the sliders set.</span></figcaption></figure>",
+      "css": ":host,.ds-root{--ground:#f2f4ef;--paper:#fcfdfb;--ink:#18201b;--muted:#4f5852;--rule:#d3d8d0;--rule-strong:#98a29a;--read:#8aa5b8;--damage:#c2421b;--hl:#f0d35a;--hl-soft:#f7e9a8;--on-ch:#fcfdfb;--pass:#2a6649;--f-display:'Archivo','Arial Narrow','Helvetica Neue',sans-serif;--f-body:'Source Serif 4','Iowan Old Style',Georgia,serif;--f-mono:'JetBrains Mono',ui-monospace,Menlo,monospace;}.ds-plate{margin:0;width:420px;background:var(--paper);border:1px solid var(--rule);border-radius:4px;padding:18px 18px 14px;display:flex;flex-direction:column;gap:14px;color:var(--ink)}.ds-ctrl{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:baseline;gap:2px 10px}.ds-ctrl label{font:600 13px/1.3 var(--f-display)}.ds-ctrl code{font:13px var(--f-mono)}.ds-ctrl output{font:600 13px/1 var(--f-mono);font-variant-numeric:tabular-nums}.ds-ctrl input{grid-column:1/-1;width:100%;accent-color:var(--ink);margin:6px 0 0}.ds-reset{align-self:flex-start;font:600 13px/1 var(--f-display);color:var(--muted);background:none;border:1px solid var(--rule);border-radius:4px;padding:7px 10px;cursor:pointer}.ds-reset:hover{color:var(--ink);border-color:var(--rule-strong)}.ds-reset:focus-visible{outline:2px solid var(--ink);outline-offset:2px}.ds-ro{margin:0;padding:12px 0 0;border-top:1px dashed var(--rule)}.ds-ro div{display:grid;grid-template-columns:auto minmax(0,1fr);gap:2px 8px;align-items:center}.ds-dot{grid-row:span 2;width:20px;height:20px;border-radius:50%;background:var(--ink);color:var(--ground);display:grid;place-items:center;font:700 11px/1 var(--f-display)}.ds-ro dt{font:600 12px/1.2 var(--f-display);color:var(--muted)}.ds-ro dd{margin:0;font:600 15px/1.25 var(--f-mono)}.ds-pass{color:var(--pass)}.ds-verdict{margin:0;font:500 15px/1.45 var(--f-body)}.ds-verdict b{font-weight:650}figcaption{display:flex;gap:10px;align-items:baseline;font:400 14px/1.45 var(--f-body);color:var(--muted);border-top:1px solid var(--rule);padding-top:10px}figcaption b{flex:none;font:750 12px/1.45 var(--f-display);letter-spacing:.08em;text-transform:uppercase;color:var(--ink)}"
+    },
+    {
+      "name": "Search Field",
+      "kind": "input",
+      "refersTo": "search-field",
+      "description": "Masthead search with magnifier, serif input, clear button when filled, '/' key hint; ink border and yellow halo on focus.",
+      "html": "<label class=\"ds-search\"><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><circle cx=\"10.5\" cy=\"10.5\" r=\"6.5\"/><path d=\"M15.5 15.5 21 21\" stroke-linecap=\"round\"/></svg><input type=\"search\" placeholder=\"Find a parameter, flag or column\"><button type=\"button\" class=\"ds-clear\" aria-label=\"Clear search\"><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M6 6l12 12M18 6 6 18\" stroke-linecap=\"round\"/></svg></button><span class=\"ds-kbd\">/</span></label>",
+      "css": ":host,.ds-root{--ground:#f2f4ef;--paper:#fcfdfb;--ink:#18201b;--muted:#4f5852;--rule:#d3d8d0;--rule-strong:#98a29a;--read:#8aa5b8;--damage:#c2421b;--hl:#f0d35a;--hl-soft:#f7e9a8;--on-ch:#fcfdfb;--f-display:'Archivo','Arial Narrow','Helvetica Neue',sans-serif;--f-body:'Source Serif 4','Iowan Old Style',Georgia,serif;--f-mono:'JetBrains Mono',ui-monospace,Menlo,monospace;}.ds-search{display:flex;align-items:center;gap:10px;width:420px;height:44px;padding:0 12px;background:var(--paper);border:1px solid var(--rule-strong);border-radius:6px}.ds-search:focus-within{border-color:var(--ink);box-shadow:0 0 0 3px color-mix(in srgb,var(--hl) 55%,transparent)}.ds-search svg{flex:none;width:18px;height:18px;stroke:var(--muted);fill:none;stroke-width:2}.ds-search input{flex:1;min-width:0;border:0;background:transparent;color:var(--ink);font:400 16px/1 var(--f-body);outline:none;caret-color:var(--damage)}.ds-clear{display:grid;place-items:center;width:28px;height:28px;padding:0;border:0;border-radius:4px;background:none;cursor:pointer}.ds-clear svg{width:16px;height:16px;stroke:var(--muted)}.ds-clear:hover svg{stroke:var(--ink)}.ds-clear:focus-visible{outline:2px solid var(--ink);outline-offset:2px;border-radius:2px}.ds-search input::placeholder{color:var(--muted)}.ds-kbd{font:600 12px/1 var(--f-mono);color:var(--muted);border:1px solid var(--rule-strong);border-radius:4px;padding:3px 6px}"
+    },
+    {
+      "name": "Search Results",
+      "kind": "custom",
+      "refersTo": "search-results",
+      "description": "The only floating surface: mono symbol, muted serif name, workflow chips; selected row in lit wash.",
+      "html": "<ul class=\"ds-res\" role=\"listbox\"><li aria-selected=\"true\"><span class=\"ds-s\">Zfit</span><span class=\"ds-nm\">Damage significance</span><span class=\"ds-chip\" style=\"--tab:#2a6649\"><i></i>Holi</span></li><li><span class=\"ds-s\">-t</span><span class=\"ds-nm\">Conflict tolerance</span><span class=\"ds-chip\" style=\"--tab:#2a5986\"><i></i>pathphynder</span></li></ul>",
+      "css": ":host,.ds-root{--ground:#f2f4ef;--paper:#fcfdfb;--ink:#18201b;--muted:#4f5852;--rule:#d3d8d0;--rule-strong:#98a29a;--read:#8aa5b8;--damage:#c2421b;--hl:#f0d35a;--hl-soft:#f7e9a8;--on-ch:#fcfdfb;--f-display:'Archivo','Arial Narrow','Helvetica Neue',sans-serif;--f-body:'Source Serif 4','Iowan Old Style',Georgia,serif;--f-mono:'JetBrains Mono',ui-monospace,Menlo,monospace;}.ds-res{width:420px;margin:0;padding:6px;list-style:none;background:var(--paper);border:1px solid var(--rule-strong);border-radius:8px;box-shadow:0 12px 32px -12px rgb(0 0 0/.28)}.ds-res li{display:grid;grid-template-columns:minmax(0,auto) minmax(0,1fr) auto;align-items:baseline;gap:12px;padding:9px 10px;border-radius:5px;cursor:pointer}.ds-res li:hover,.ds-res li[aria-selected=true]{background:var(--hl-soft)}.ds-s{font:600 14px/1.3 var(--f-mono);color:var(--ink)}.ds-nm{font:400 15px var(--f-body);color:var(--muted);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.ds-chip{display:inline-flex;align-items:center;gap:6px;font:600 12.5px/1 var(--f-display);color:var(--ink);padding:4px 8px 4px 6px;border:1px solid var(--rule);border-radius:999px;background:var(--paper)}.ds-chip i{width:9px;height:9px;border-radius:50%;background:var(--tab)}"
+    },
+    {
+      "name": "Workflow Chip",
+      "kind": "chip",
+      "refersTo": "wf-chip",
+      "description": "Paper pill with a family-colour dot naming a workflow that reports the entry.",
+      "html": "<a class=\"ds-wf\" href=\"#\" style=\"--tab:#6a3a7c\"><i></i>pathopipe</a>",
+      "css": ":host,.ds-root{--ground:#f2f4ef;--paper:#fcfdfb;--ink:#18201b;--muted:#4f5852;--rule:#d3d8d0;--rule-strong:#98a29a;--read:#8aa5b8;--damage:#c2421b;--hl:#f0d35a;--hl-soft:#f7e9a8;--on-ch:#fcfdfb;--f-display:'Archivo','Arial Narrow','Helvetica Neue',sans-serif;--f-body:'Source Serif 4','Iowan Old Style',Georgia,serif;--f-mono:'JetBrains Mono',ui-monospace,Menlo,monospace;}.ds-wf{display:inline-flex;align-items:center;gap:6px;font:600 12.5px/1 var(--f-display);color:var(--ink);text-decoration:none;padding:4px 8px 4px 6px;border:1px solid var(--rule);border-radius:999px;background:var(--paper)}.ds-wf:hover{border-color:var(--rule-strong)}.ds-wf:focus-visible{outline:2px solid var(--ink);outline-offset:2px}.ds-wf i{width:9px;height:9px;border-radius:50%;background:var(--tab)}"
+    },
+    {
+      "name": "Checklist Filter",
+      "kind": "chip",
+      "refersTo": "filter-pill",
+      "description": "Toggle pills filtering the checklist by workflow; pressed is ink.",
+      "html": "<div class=\"ds-fl\"><button type=\"button\" aria-pressed=\"true\">All</button><button type=\"button\" aria-pressed=\"false\" style=\"--tab:#855a0c\"><i></i>Ochre</button><button type=\"button\" aria-pressed=\"false\" style=\"--tab:#96322f\"><i></i>soibean</button></div>",
+      "css": ":host,.ds-root{--ground:#f2f4ef;--paper:#fcfdfb;--ink:#18201b;--muted:#4f5852;--rule:#d3d8d0;--rule-strong:#98a29a;--read:#8aa5b8;--damage:#c2421b;--hl:#f0d35a;--hl-soft:#f7e9a8;--on-ch:#fcfdfb;--f-display:'Archivo','Arial Narrow','Helvetica Neue',sans-serif;--f-body:'Source Serif 4','Iowan Old Style',Georgia,serif;--f-mono:'JetBrains Mono',ui-monospace,Menlo,monospace;}.ds-fl{display:flex;flex-wrap:wrap;gap:6px}.ds-fl button{display:inline-flex;gap:6px;align-items:center;font:600 13px/1 var(--f-display);padding:8px 11px;border-radius:999px;border:1px solid var(--rule-strong);background:var(--paper);color:var(--ink);cursor:pointer}.ds-fl button:focus-visible{outline:2px solid var(--ink);outline-offset:2px}.ds-fl i{width:9px;height:9px;border-radius:50%;background:var(--tab)}.ds-fl button[aria-pressed=true]{background:var(--ink);color:var(--ground);border-color:var(--ink)}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Field Guide",
+    "overview": "**Creative North Star: \"The Field Guide\"**\n\nThe page behaves like a printed naturalist's guide adapted for a screen. Each concept is a species account: a live plate on the left, the written account on the right at reading measure, with every parameter a numbered field mark that appears both on the plate and in the list. Chapters are workflows, reached through flat, family-coloured thumb tabs that sit along the masthead like the cut edge of a book. A checklist at the back indexes every entry as a table.\n\nThe world is cool white and ink, quiet enough that the plates carry the colour. Plates are pure paper panels drawn in a strict vocabulary: reads in slate blue, damaged bases and thresholds in vermilion, numbered black dots on hairline leaders. Type is split by job, not by decoration: condensed Archivo names things, Source Serif 4 explains them, JetBrains Mono is reserved for symbols and values a user will type or compare. Density is reference density: generous reading measure, tight labels, everything one scroll from the thing it describes.\n\nMotion is one gesture: a 280ms ease-out highlight pulse on a field mark when a search hit, deep link, or list hover points at it. Plates redraw on slider input without animation, so the reader sees the knob's effect, not a transition.",
+    "keyCharacteristics": [
+      "Plate left (about 55%), account right; stacks to plate-over-account below 1080px.",
+      "Flat chapter colour on tabs, chapter bands, and chip dots only; never on plates or body text.",
+      "Numbered field-mark dots tie the plate, the list, and the readouts together.",
+      "Highlight yellow is the only state colour for \"this is the one you asked for\".",
+      "Every plate is labelled synthetic in its caption; plate captions lead with \"Plate n\".",
+      "Light and dark themes share every role; dark is a full remap, not an inversion."
+    ],
+    "rules": [
+      {
+        "name": "The Reads and Damage Rule",
+        "body": "On a plate, reads are slate (`read`) and damage is vermilion (`damage`). No other pair of colours ever stands for sequence and its damage.",
+        "section": "colors"
+      },
+      {
+        "name": "The Vermilion Means a Line Rule",
+        "body": "Vermilion is spent only on damage, thresholds, and unverified flags. Never use it for decoration, links, or headings.",
+        "section": "colors"
+      },
+      {
+        "name": "The Family Colour Stays Flat Rule",
+        "body": "Chapter colours are flat fills on tabs, bands, and 9px dots. They do not tint plates, account text, or backgrounds inside a chapter.",
+        "section": "colors"
+      },
+      {
+        "name": "The Mono Is for Things You Type Rule",
+        "body": "JetBrains Mono sets symbols, flags, column names, defaults, thresholds, and computed values. It never sets prose, headings, or labels.",
+        "section": "typography"
+      },
+      {
+        "name": "The Struck, Not Faded Rule",
+        "body": "Inside a plate, text for an option that is off is drawn in `muted` with a line-through so it stays legible at full contrast; opacity fades are for shapes only.",
+        "section": "typography"
+      },
+      {
+        "name": "The Spelled-as-Shipped Rule",
+        "body": "Symbols are set exactly as the tool spells them, quirks included, with `overflow-wrap: anywhere` rather than hyphenation or truncation.",
+        "section": "typography"
+      },
+      {
+        "name": "The One Floating Thing Rule",
+        "body": "Only the search results popover casts a shadow. Plates, bands, chips, and tables stay flat on hairlines.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "**Do** draw every new parameter on a plate before explaining it, with a numbered `ink` field mark that matches its list entry.",
+      "**Do** keep reads `read`, damage and thresholds `damage`, and verdicts `pass` / `fail`.",
+      "**Do** caption every plate \"Plate n\" and say in the caption that its data are synthetic or illustrative.",
+      "**Do** put the Threshold fact first in an entry's fact row, term in vermilion.",
+      "**Do** use `hl` / `hl-soft` for every \"you are here\" state: lit marks, found entries, selected results, focus halo.",
+      "**Do** give every new chapter a family colour token with a light and a dark value and an `on-ch` contrast check (4.5:1 or better; darken the dark value rather than mixing the text).",
+      "**Do** keep one tab stop per plate, with arrow keys moving between its marks and a 28px hit area under each."
+    ],
+    "donts": [
+      "**Don't** use JetBrains Mono for prose, headings, or labels.",
+      "**Don't** add shadows to plates, chapter bands, or chips; only the search popover floats.",
+      "**Don't** tint plates or account text with the chapter colour.",
+      "**Don't** animate plate redraws; the only motion is the 280ms mark pulse, the tab lift, and the list wash.",
+      "**Don't** use vermilion for anything but damage, thresholds, and unverified flags.",
+      "**Don't** fade plate text with opacity to mark an option off; strike it through in `muted`."
+    ]
+  }
+}
